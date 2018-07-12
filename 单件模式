@@ -1,0 +1,32 @@
+单件模式：确保一个类只有一个实例，并提供一个全局访问点。
+我们提供了对这个实例的全局访问点，getInstance方法是静态的，这意味着它是一个类方法，所以可以在代码的任何地方使用Singleton.getInstance（）。
+用延迟实例化的方式创建单件，这种做法对资源敏感的对象特别重要。
+单件模式的类也可以是一般的类，具有一般的数据和方法。
+
+***多线程问题：
+
+在首次创建对象是需要多线程是互斥进入getInstance（）方法的 ，而其他时刻只是获取对象则不需要互斥调用方法。
+
+private static Singleton uniqueInstance;
+private static synchronized Singleton getInstance()
+
+
+运用双重检查加锁 在getInstance() 中减少使用同步：
+双重检查加锁，首先检查是否实例化已经创建了，如果尚未创建，才进行同步。
+
+private volatile static Singleton uniqueInstance;
+public static Singleton getInstance(){
+if(uinqueIsntance==nulll){
+  synchronized (Singleton.class){
+    if(uniqueInstance==null){
+    uniqueInstance= new Singleton();
+    }
+ }
+}
+return uniqueSingleton;
+}
+
+
+在java中实现单件模式需要私有的构造器，一个静态方法，和一个静态变量。
+确定在性能和资源上的限制，然后小心滴选择适当的方案来实现单件，以解决多线程问题
+如果使用多个类加载器，可能会导致单件失效而产生多个实例。
