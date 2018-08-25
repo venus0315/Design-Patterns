@@ -1,0 +1,30 @@
+简单工厂， 工厂方法模式， 抽象工厂模式：
+
+简单工厂:
+简单工厂不是一个模式，而是一种编程习惯。
+
+工厂方法模式：
+定义了一个创建对象的接口，但由子类决定要实例化的类是哪一个。工厂方法让类把实例化推迟到子类。
+
+
+依赖倒置原则：要依赖抽象，不要依赖具体类。
+
+工厂方法的子类看起来很像简单工厂，
+但是简单工厂把全部的事情，在一个地方都处理完了， 然而工厂方法却是创建一个框架，让子类决定要如何实现。
+使用接口让代码富有弹性， 但是还是要建立具体类的实例。
+Drink drink =new CocoColar();
+
+我们将创建一个 Shape 接口和实现 Shape 接口的实体类。下一步是定义工厂类 ShapeFactory。
+
+FactoryPatternDemo，我们的演示类使用 ShapeFactory 来获取 Shape 对象。它将向 ShapeFactory 传递信息（CIRCLE / RECTANGLE / SQUARE），以便获取它所需对象的类型。
+
+
+
+
+
+
+
+
+除了使用new 操作符之外，还有更多制造对象的方法。
+参考：https://blog.csdn.net/zxt0601/article/details/52798423
+https://blog.csdn.net/wfg18801733667/article/details/60954744
