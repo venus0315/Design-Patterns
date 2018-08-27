@@ -16,7 +16,6 @@
 基本的模式：《设计模式：可复用面向对象软件的基础》的23个基本的模式。
 其他模式： 专注于企业软件，并发系统，业务系统等。
 
-![image]（https://github.com/venus0315/Design-Patterns/blob/master/singlenton.png ）
 
 23个基本的模式分类:
 
