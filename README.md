@@ -1,41 +1,60 @@
 # Design-Patterns
-模式：是在某情境下，针对某问题的某种解决方案。
+模式：
+
+是在某情境下，针对某问题的某种解决方案。
+
 
 设计模式：
-《设计模式：可复用面向对象软件的基础》--23个基本的模式。
+
+设计模式告诉我们如何组织类和对象以解决某种问题。
+库与框架长久以来，一直扮演着软件开发过程的重要角色，我们从中挑选所要的组件，把他们放进合适的地方，
+但是库与框架无法帮助我们将应用组织成容易理解，容易维护，具有弹性的架构，所以需要设计模式。
+
+
+模式分类：
+
+基本的模式：《设计模式：可复用面向对象软件的基础》的23个基本的模式。
 其他模式： 专注于企业软件，并发系统，业务系统等。
 
 
-23个基本的模式分类（根据模式的目标分成三个不同类目）：
+23个基本的模式分类:
+
+1.根据模式的目标分成三个不同类目:
+
 创建型：涉及到将对象实例化，这类模式提供一个方法，将客户从所需要实例化的对象中解耦。
+
 singleton(单例模式）, abstractFactory抽象工厂模式, factoryMethod工厂方法 (prototype, builder)
 
 行为型：涉及到类和对象如何交互分配职责。
-Template Method（模板方法）, Iterator（迭代器模式）, Command（命令模式）, Observer（观察者模式）, State（状态模式）, Strategy（策略模式） (visitor, Mediator, Interpreter, Chain of Responsibility, Memento)
+
+Template Method（模板方法）, Iterator（迭代器模式）, Command（命令模式）, Observer（观察者模式),
+State（状态模式）, Strategy（策略模式） (visitor, Mediator, Interpreter, Chain of Responsibility, Memento)
 
 结构型：可以把类或对象组合到更大的结构中。
-Decorator（装饰者模式）,Proxy（代理模式）,Facade(外观模式）,Composite(组合模式）,Adapter(适配器模式） （Bridge, Flyweight)
 
+Decorator（装饰者模式）,Proxy（代理模式）,Facade(外观模式）,Composite(组合模式）,Adapter(适配器模式）（Bridge, Flyweight)
 
-模式所处理的是类或对象：
+2.根据模式所处理的是类或对象：
+
 类 :
+
 template Method,Factory Method, Adapter, (Interpreter)
 
 对象：
-Singleton(单例模式）, abstractFactory抽象工厂模式,  Iterator（迭代器模式）, Command（命令模式）, Observer（观察者模式）, State（状态模式）, Strategy（策略模式）Decorator（装饰者模式）,Proxy（代理模式）,Facade(外观模式）,Composite(组合模式）,Adapter(适配器模式）  (prototype, builder，visitor, Mediator, Chain of Responsibility, Memento，Bridge, Flyweight)
+
+Singleton(单例模式）, abstractFactory抽象工厂模式,  Iterator（迭代器模式）, Command（命令模式）,
+Observer（观察者模式）, State（状态模式）, Strategy（策略模式）Decorator（装饰者模式）,Proxy（代理模式）,
+Facade(外观模式）,Composite(组合模式）,Adapter(适配器模式）  (prototype, builder，visitor, Mediator, Chain of Responsibility, Memento，Bridge, Flyweight)
 
 
 
+共享模式：
 
-共享模式
-：模式能够用更少的词汇座更充分的沟通。
+模式能够用更少的词汇座更充分的沟通。
 将说话的方式保持在模式层次，可以减少琐碎的事情。
 共享词汇可以帮住开发团队快速充电。
 共享词汇帮助初级开发人员迅速成长。
 
-
-库与框架长久以来，一直扮演着软件开发过程的重要角色，我们从中挑选所要的组件，把他们放进合适的地方，但是……库与框架无法帮助我们将应用组织成容易理解，容易维护，具有弹性的架构，所以需要设计模式。
-设计模式告诉我们如何组织类和对象以解决某种问题。
 
 
 OO基础：
