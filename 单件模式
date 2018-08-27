@@ -5,6 +5,9 @@ https://blog.csdn.net/czqqqqq/article/details/80451880
 
 结构：
 
+
+![image](https://github.com/venus0315/Design-Patterns/blob/master/singlenton.png)
+
 　　一般包含三个要素：
 
 　　1.私有的静态的实例对象 private static instance
